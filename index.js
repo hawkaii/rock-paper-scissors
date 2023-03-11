@@ -12,8 +12,8 @@ const choiceBtn = document.querySelector(".choiceBtn");
 
 
 
-let playerSelection = "rock"//prompt("Do you choose rock,paper or scissors");
-playerSelection = playerSelection.toLowerCase();
+let playerSelection;
+
 let computerSelection;
 //console.log(playRound(playerSelection, computerSelection));
 let result;
@@ -24,9 +24,10 @@ game();
 
 function game() {
     for (let i = 0; i < 5; i++) {
-
+        playerSelection = prompt("Do you choose rock,paper or scissors");
+        playerSelection = playerSelection.toLowerCase();
         getComputerChoice();
-        console.log(playRound());
+        console.log(playRound(playerSelection,computerSelection));
 
     }
 }
