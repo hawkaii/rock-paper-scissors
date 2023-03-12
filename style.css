@@ -1,12 +1,16 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-    background: cornflowerblue;
+    background-image: url("Mental Machinery.png.jpg");
+    background-size: cover;
+}
+.gameText {
+    color: whitesmoke;
+
 }
 
 #resultText{
-
-    color: darkmagenta;
+    color: aqua;
 }
 
 #gameDiv {
@@ -15,7 +19,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: aqua;
+    border: 1px solid black;
+    backdrop-filter: blur(10px)
 
 }
 #buttons{
@@ -23,7 +28,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: coral;
+    background: fuchsia;
+    border: 5px double black;
 
 
 }
@@ -42,6 +48,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(10px)
 }
 #score{
     display: flex;
@@ -62,4 +69,8 @@ body{
     font-family: "DejaVu Sans Mono" , cursive;
 
 }
+.gameText{
+    opacity: 100%;
+}
+
 
