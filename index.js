@@ -8,6 +8,7 @@ const buttons = document.querySelectorAll(".choiceBtn");
 const reset = document.querySelector(".Reset");
 const playerScore = document.querySelector("#playerScore");
 const computerScore = document.querySelector("#computerScore");
+const retryText = document.querySelector("#retryText");
 
 let playerSelection;
 let computerSelection;
@@ -26,6 +27,7 @@ function startGame(){
   resultText.textContent = ``;
   playerScore.textContent = `Player: ${player}` ;
   computerScore.textContent = `Computer: ${computer}`;
+  retryText.textContent = ``;
 
 }
 
@@ -43,6 +45,11 @@ function startGame(){
          resultText.textContent = `${result}`;
          count++;
        }
+       else{
+           resultText.textContent = `Player = ${player} & Computer: ${computer}`
+           retryText.textContent = `To play again click the reset button`
+       }
+
       })
     });
 
