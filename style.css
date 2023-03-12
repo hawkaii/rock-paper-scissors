@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background: cornflowerblue;
+}
+
+#resultText{
+
+    color: darkmagenta;
+}
+
+#gameDiv {
+    font-family: "Droid Sans Mono", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+
+}
+#buttons{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: coral;
+
+
+}
+.choiceBtn{
+    line-height: 60px;
+    width: 250px;
+    padding: 10px;
+    margin: 40px;
+    font-size: large;
+    background: lemonchiffon;
+    border: solid  black 5px;
+
+}
+#scoreAndReset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#score{
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    gap: 100px;
+
+}
+.Reset{
+    font-size: larger;
+    width: 150px;
+    height: 60px;
+    border: double ghostwhite 10px;
+    color: whitesmoke;
+    background: red;
+}
+#score{
+    font-family: "DejaVu Sans Mono" , cursive;
+
+}
+

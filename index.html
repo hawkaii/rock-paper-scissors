@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -13,11 +14,21 @@
     <h1 class="gameText" id="computerText">Computer: </h1>
     <h1 class="gameText" id="resultText">Result: </h1>
 
-
-    
-
-
 </div>
+<div id = "buttons">
+    <button class="choiceBtn"  value="rock">Rock 👊</button>
+    <button class="choiceBtn"  value="paper">Paper ✋</button>
+    <button class="choiceBtn"  value="scissors">Scissors ✌</button>
+</div>
+<div id = "scoreAndReset">
+    <div id = "score">
+        <h1 class="gameText" id="playerScore">Player: 0 </h1>
+        <h1 class="gameText" id="computerScore">Computer: 0 </h1>
+
+    </div>
+    <button type="reset" class="Reset">Reset</button>
+</div>
+
 
 <script src="index.js"></script>
 </body>
