@@ -22,8 +22,8 @@ function startGame(){
   count =0;
   player = 0;
   computer = 0;
-  playerText.textContent = `Player: `;
-  computerText.textContent = `Computer:`
+  playerText.textContent = `The game is of five rounds`;
+  computerText.textContent = `click on any of the buttons to start to play`;
   resultText.textContent = ``;
   playerScore.textContent = `Player: ${player}` ;
   computerScore.textContent = `Computer: ${computer}`;
@@ -48,6 +48,8 @@ function startGame(){
        else{
            resultText.textContent = `Player = ${player} & Computer: ${computer}`
            retryText.textContent = `To play again click the reset button`
+           playerText.textContent = ``;
+           computerText.textContent = ``;
        }
 
       })
